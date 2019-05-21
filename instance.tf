@@ -5,6 +5,6 @@ resource "aws_instance" "web" {
   key_name = "${var.keypair}"
   security_groups = ["${var.security_g}"]
   subnet_id = "${var.subnet_id}"
-  tag_name = "WebServer-${count.index + 1}"
+ 
   }
 }
