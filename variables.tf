@@ -3,7 +3,7 @@ variable "security_g" {
    }
 
 variable "keypair" {
-   default = "Green_Berets_KeyPair"
+   default = "Green_Berets_Key2"
    }
 
 variable "vpc_security_group_id" {
