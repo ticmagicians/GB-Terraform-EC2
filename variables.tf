@@ -1,5 +1,5 @@
 variable "security_g" {
-   default = "sg-0c37c2b0c2eb0a565"
+   default = "sg-0c62dbfab824079be"
    }
 
 variable "keypair" {
