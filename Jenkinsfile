@@ -18,7 +18,7 @@ withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariab
   }
       
   stage ('Checkout') {
-      git 'https://github.com/ratanbekal/GB-Terraform-EC2'
+      git 'https://github.com/ticmagicians/GB-Terraform-EC2'
   }
 
   stage ('Terraform Plan') {
