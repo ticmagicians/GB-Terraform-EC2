@@ -8,5 +8,6 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_lb_target_group_attachment" "GB-TIC-TG1" {
-  target_group_arn = "${var.target_group_arn}"
+  target_group_arn = "${var.target_group_arn}
+  target_id = ""
 }
