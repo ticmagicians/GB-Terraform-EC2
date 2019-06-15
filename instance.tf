@@ -10,6 +10,6 @@ resource "aws_instance" "web" {
 #Instance Attachment
 resource "aws_alb_target_group_attachment" "GB-TIC-TG1" {
   target_group_arn = "${var.target_group_arn}"
-  target_id        = "${aws_instance.web.[count.index]}"  
+  target_id        = "${aws_instance.web.id[count.index]}"  
   port             = 80
 }
