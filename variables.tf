@@ -19,3 +19,7 @@ variable "instance_count" {}
 variable "tag_name" {
    default = "web-server"
    }
+
+variable "target_group_arn" {
+   default = "arn:aws:elasticloadbalancing:ca-central-1:228804139688:targetgroup/GB-TIC-TG1/02385ddf6ca63bf7"
+   }
