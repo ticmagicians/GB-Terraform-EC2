@@ -7,3 +7,7 @@ resource "aws_instance" "web" {
   subnet_id = "${var.subnet_id}"
 }
 
+resource "aws_lb_target_group_attachment" "GB-TIC-TG1" {
+  target_group_arn = "${aws_lb_target_group.test.arn}"
+  target_id        = "${aws_lambda_function.test.arn}"
+}
