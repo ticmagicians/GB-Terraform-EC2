@@ -17,7 +17,7 @@ variable "subnet_id" {
 variable "instance_count" {}
 
 variable "tag_name" {
-   default = "web-server"
+   default = "web-server-"
    }
 
 variable "target_group_arn" {
