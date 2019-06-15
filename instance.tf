@@ -7,7 +7,9 @@ resource "aws_instance" "web" {
   subnet_id = "${var.subnet_id}"
 }
 
-resource "aws_lb_target_group_attachment" "GB-TIC-TG1" {
-  target_group_arn = "${var.target_group_arn}
+#Instance Attachment
+resource "aws_alb_target_group_attachment" "GB-TIC-TG1" {
+  target_group_arn = "${var.target_group_arn}"
   target_id        = "${aws_instance.web.id}"  
+  port             = 80
 }
